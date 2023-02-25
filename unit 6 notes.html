@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>First CSS Page</title>
+        <style>
+            /*below is an element selector*/
+            h1 {color: aqua;}
+            /*below is a grouped selector*/
+            p {h1
+                font-size:200%;
+                font-family: Verdana, Genava, Tahoma, sans-serif;
+                font-weight: 200;
+                background-color: bisque;
+            }
+            /*descendant selector only changes links inside paragraph tags*/
+            p a {
+                color:crimson;
+            }
+            /*class selector can be used to pick one or more tags on page*/
+            .secondpara {
+                color: chocolate;
+            }
+            /*this is an id selector ids must be unique*/
+            #firstpara {
+                color: blue;
+            }
+        </style>
+<head>
+<body>
+    <h1>CSS Day</h1>
+    <a href="http://www.google.com" class="secondpara">Google</a>
+    <p id="firstpara">
+        <a href="http://www.amazon.com">Amazon</a>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+        <!--the class attribute hooks to our class selector in css-->
+    <p class="secondparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+</body>
+</html>

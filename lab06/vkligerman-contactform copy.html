@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <h1 class="special">Contact</h1>
+</head>
+<body>
+
+<p> Fernanda Vera Kligerman<br>
+    303 Stadium Pl, Syracuse, NY 13210<br>
+ <a href="https://www.linkedin.com/in/fernanda-kligerman-a253a0253/" target="_blank">My LinkedIn Profile</a></p>
+ <a href="mailto:fverakli@syr.edu">Fernanda Vera Kligerman Email</a><br>
+ <img src="../images/LinkedIn-Logos/final-linkedin-logo.png" alt="LinkedIn Logo"><br>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.319330602838!2d-76.14094948454765!3d43.03471230022067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39b93dc1fff%3A0xf368c318c7cd6d25!2sLawrinson%20Hall!5e0!3m2!1sen!2sus!4v1675352118432!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+ <h2>Forms</h2>
+        <h3>Tell me about yourself!</h3>
+        <form action="https://formspree.io/f/mknajrpl" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+            <br>
+            <label for="Whatledyoutomypage?"> What led you to my page?:</label> <br>
+            <textarea id="Whatledyoutomypage?" name="Whatledyoutomypage?" rows="4" cols="50">
+            </textarea><br>
+
+            <input type="radio" id="employee" name="employee" value="employee">
+            <label for="employee">employee</label>
+            <input type="radio" id="employee2" name="student" value="student">
+            <label for="employee2">student</label><br>
+
+            <input type="checkbox" id="locatedinnewyork" name="locatedinnewyork" value="locatedinnewyork">
+            <label for="locatedinnewyork">Are you located in New York?</label><br>
+
+            <label for="location">If not, where are you located?</label><br>
+            <select id="location" name="location">
+                <option value="massachusets">Massachisets</option>
+                <option value="texas">Texas</option>
+                <option value="california">California</option>
+                <option value="maine">Maine</option>
+                <option value="michigan">Michigan</option>
+                <option value="ohio">Ohio</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <input type="submit" value="Submit">
+        </form>

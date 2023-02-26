@@ -24,7 +24,9 @@ p,h3{
     font-family:Georgia, serif, Helvetica;
 }
 
-
+p,ul,td,th,dl,ol {
+    font-family:Georgia, serif, Helvetica;
+}
 
 .evenrow{
     background-color: rgb(198, 196, 196);

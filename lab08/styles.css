@@ -1,0 +1,61 @@
+h1{color:crimson;}
+
+h2{
+    color:blue
+}
+ 
+h3 {
+    color:hotpink
+}
+
+
+p,h1{
+    font-size: 2em;
+    font-family:Georgia, serif, Helvetica;
+}
+
+p,h2{
+    font-size: 1.3em;
+    font-family:Georgia, serif, Helvetica;
+}
+
+p,h3{
+    font-size: 1em;
+    font-family:Georgia, serif, Helvetica;
+}
+
+p,ul,td,th,dl,ol {
+    font-family:Georgia, serif, Helvetica;
+}
+
+.evenrow{
+    background-color: rgb(198, 196, 196);
+}
+
+.special {color:#6661b8}
+nav {
+    background-color:#e68ba5;
+}
+
+nav a {
+    color: #573443;
+}
+
+nav a:hover {
+    background-color:#edb42d;
+}
+
+nav {
+    padding: 10px;
+    margin-bottom: 30 px;
+
+}
+
+body {
+    background-color: #eef0fd;
+    color: #8907a3;
+}
+
+a {
+    color: #34672e;
+  }

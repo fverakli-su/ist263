@@ -5,12 +5,9 @@
         <title>Contact Form</title>
         <link rel="stylesheet" href="styles.css">
     <style>
-        .special {float: left; margin-right: 40px; background-color: rgb(184, 184, 142); border-radius: 1em; padding: 10px, margin left: -10px}
+        .row2 {display: flex;}
+        .special {float: left; margin-right: 10px;}
         .clear {clear: both;}
-        
-        .special2 {float: left; margin-right: 60px; margin-top: 30px; padding: 10px;}
-        .special2 {background-color:rgb(184, 184, 142); border-radius: 1em; padding: 10px;}
-        
     </style>
 </head>
 <body>
@@ -24,16 +21,18 @@
 
 <div>
     <div class="special"> 
+        <border>
         <p> Fernanda Vera Kligerman<br>
             303 Stadium Pl, Syracuse, NY 13210<br>
     </div>
-    <div class="speciall">
+    <div>
         <a href="mailto:fverakli@syr.edu">Fernanda Vera Kligerman Email</a><br>
         <img src="../images/LinkedIn-Logos/final-linkedin-logo.png" alt="LinkedIn Logo"></div>
         <a href="https://www.linkedin.com/in/fernanda-kligerman-a253a0253/" target="_blank">My LinkedIn Profile</a></p>
+    </bordere>
     </div>
 <div>
-    <div class="special2">
+    <div>
         <h2>Forms</h2>
         <h3>Tell me about yourself!</h3>
         <form action="https://formspree.io/f/mknajrpl" method="post">
@@ -67,8 +66,9 @@
         </form>
     </div>
 
-    <div class="article1">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.319330602838!2d-76.14094948454765!3d43.03471230022067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39b93dc1fff%3A0xf368c318c7cd6d25!2sLawrinson%20Hall!5e0!3m2!1sen!2sus!4v1675352118432!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img1"></iframe>
+    <div class="map">
+        <article class="article1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.319330602838!2d-76.14094948454765!3d43.03471230022067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39b93dc1fff%3A0xf368c318c7cd6d25!2sLawrinson%20Hall!5e0!3m2!1sen!2sus!4v1675352118432!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>
    

@@ -5,7 +5,7 @@ h2{
 }
  
 h3 {
-    color:hotpink
+    color:rgb(72, 2, 110)
 }
 
 
@@ -34,7 +34,7 @@ p,ul,td,th,dl,ol {
 
 .special {color:#6661b8}
 nav {
-    background-color:#e68ba5;
+    background-color:#f9bbe1;
 }
 
 nav a {
@@ -57,7 +57,7 @@ body {
 }
 
 a {
-    color: #34672e;
+    color: #241f1d;
   }
 
 h1, p {

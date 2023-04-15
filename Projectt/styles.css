@@ -56,7 +56,7 @@ nav{
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
         margin-left: 20px;
-        color:#5b7168;
+        color:#567c6d;
         font-family:sans-serif;
       }
 
@@ -74,7 +74,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #708d81;
+    background-color: #35483e;
     color: #fff;
     padding: 10px;
     font-size: 18px;
@@ -112,7 +112,7 @@ text-decoration: none;
 padding: 10px;
 font-family: sans-serif;
 color: #fff;
-background: #4f6b5c;
+background: #435c50;
 border-radius: 100px;
 position: sticky;
 bottom: 20px; 

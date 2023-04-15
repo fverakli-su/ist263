@@ -114,5 +114,5 @@ h1, p {
 
 
 .map {
-    flex-wrap: wrap !important;
+    flex-wrap: wrap;
 }

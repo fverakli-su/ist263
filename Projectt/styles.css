@@ -251,9 +251,68 @@ p {
         text-align: left;
       }
       
+  .artwork {
+  width: 600px;
+  }
+
+  .artwork {
+    width: 400px;
+    }
+
+
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+
+      
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    background-color: black;
+  }
   
-      
-      
+  .image-grid img {
+    width: 100%; 
+    height: auto; 
+  }
     
-      
-      
+  .header {
+    position: relative;
+    text-align: center;
+  
+  }
+  
+  .header h1, .header h2, .header form {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%;
+    opacity: 50%;
+
+    }
+
+    
+
+    
+    
+.me {
+  width: 500px
+}

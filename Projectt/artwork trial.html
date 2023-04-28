@@ -10,6 +10,149 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap" rel="stylesheet">
+    <style>
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 8px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #865954;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 249, 249);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #bf918c;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #4f6b5c;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #865954;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #4f6b5c;
+  padding: 2px 16px;
+  color: #fefefe ;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    </style>
 
 </head>
 <body>
@@ -78,7 +221,7 @@
       <img src="../Projectt/images/oranges.png" alt="art4" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
     </div>
     <div class="column">
-    <img src="../Projectt/images/oranges2.png" alt="art4" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+    <img src="../Projectt/images/oranges2.jpg" alt="art4" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
     </div>
     <div class="column">
       <img src="../Projectt/images/filler.png" alt="art4" style="width:100%">
@@ -106,72 +249,72 @@
 
         <div class="mySlides">
           <div class="numbertext">Yelling Flowers (2021)</div>
-          <img src="../Projectt/images/yelling-flowers.png" style="margin-left: 150px;">
+          <img src="../Projectt/images/yelling-flowers.png" style="width:100%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext"> Pug 2020</div>
-          <img src="../Projectt/images/Pug.png" alt="art4" style="width: 50%; margin-left: 275px;">
+          <img src="../Projectt/images/Pug.png" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext"> A Glance at My Childhood (2021)</div>
-          <img src="../Projectt/images/A-glance-at-my-childhood.jpg" alt="art4" style="width: 50%; margin-left: 275px;">
+          <img src="../Projectt/images/A-glance-at-my-childhood.jpg" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">Facade Exploration (2021)</div>
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
           <img src="../Projectt/images/fascadeexploration.png" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">Japanese Fisherman Style Home Model (2020)</div>
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
           <img src="../Projectt/images/japanese-model.png"  alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext"> Kitchen Renovation Project(2020)</div>
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
           <img src="../Projectt/images/kitchen-model.png" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext"> Bungalow House Design (2021)</div>
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
           <img src="../Projectt/images/bungalow.jpg" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">Repetition (2021)</div>
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
           <img src="../Projectt/images/repetition.png" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">Abstract Stair Collage (2021)</div>
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
           <img src="../Projectt/images/stairdesign2.png" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">David Michaelangelo Sketch(2021)</div>
-          <img src="../Projectt/images/davidmichaelangelo.jpg" alt="art4" style="width: 50%; margin-left: 275px;">
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
+          <img src="../Projectt/images/davidmichaelangelo.jpg" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">Dad's Barbecue (2021)</div>
-          <img src="../Projectt/images/dad's-barbecue.png" alt="art4" style="width: 50%; margin-left: 275px;">
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
+          <img src="../Projectt/images/dad's-barbecue.png" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext"> Soho (2020)</div>
-          <img src="../Projectt/images/soho.png" alt="art4" style="width: 50%; margin-left: 275px;">
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
+          <img src="../Projectt/images/soho.png" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext"> Oranges (2022)</div>
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
           <img src="../Projectt/images/oranges.png" alt="art4" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext"> Oranges pt.2 (2022)</div>
-          <img src="../Projectt/images/oranges2.png" alt="art4" style="width: 80%; margin-left: 120px;">
+          <div class="numbertext"> A Glance at My Childhood (2021)</div>
+          <img src="../Projectt/images/oranges2.jpg" alt="art4" style="width:100%">
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -191,100 +334,53 @@
         <div class="column">
           <img class="demo cursor" src="../Projectt/images/Dementia.jpg" style="width:100%" onclick="currentSlide(3)" alt="Colored Pencils - 18 x 24">
         </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/yelling-flowers.jpg" style="width:100%" onclick="currentSlide(4)" alt=" Watercolor, Colored Pencils, Paper 12 x 18
-          ">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/Pug.png" style="width:100%" onclick="currentSlide(5)" alt="Scalpel blade on scratchboard 8.5 x 11">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/A-glance-at-my-childhood.jpg" style="width:100%" onclick="currentSlide(6)" alt=" Charcoal and Colored Pencils 18 x 24">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/fascadeexploration.png" style="width:100%" onclick="currentSlide(7)" alt="Canon Rebel SL2 and Lightroom">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/japanese-model.png" style="width:100%" onclick="currentSlide(8)" alt="Foam-board, display grass, artificial landscaping, wood, 
-          paper, fabric swatches 22 x 30">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/kitchen-model.png" style="width:100%" onclick="currentSlide(9)" alt="Autocad">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/bungalow.jpg" style="width:100%" onclick="currentSlide(10)" alt="Revit 2021">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/repetition.png" style="width:100%" onclick="currentSlide(11)" alt="Canon Rebel SL2 and Lightroom and Photoshop">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/stairdesign2.png" style="width:100%" onclick="currentSlide(12)" alt=" 12 x 18 Paper">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/davidmichaelangelo.jpg" style="width:100%" onclick="currentSlide(13)" alt="Pen and ink on 6 x 8.5 paper">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="../Projectt/images/dad's-barbecue.png" style="width:100%" onclick="currentSlide(14)" alt="Pen and ink on 8.5 x 11 paper">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src= "../Projectt/images/soho.png" style="width:100%" onclick="currentSlide(15)" alt="Pen and ink on 8.5 x 11 paper">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src= "../Projectt/images/oranges.png" style="width:100%" onclick="currentSlide(16)" alt="Pen and ink on 8.5 x 11 paper">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src= "../Projectt/images/oranges2.png" style="width:100%" onclick="currentSlide(17)" alt="Pen and ink on 8.5 x 11 paper, photoshop">
-        </div>
-
-
       </div>
     </div>
 
+    
+    
+    <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    
+    
+    </script>
+    
 
-      <script>
-      function openModal() {
-        document.getElementById("myModal").style.display = "block";
-      }
-      
-      function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-      }
-      
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
-          
-      </body>
-      </html>
-      
-  
-    <footer class="blockk">
+    <footer>
         <span class="footer">&#169;2023 Fernanda Kligerman Designs</span><br>
     
         <h3 class=news>Newsletter</h3>

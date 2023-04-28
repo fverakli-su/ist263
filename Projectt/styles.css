@@ -131,6 +131,7 @@ margin-left: 20px;
     font-size: 14px;
     color: #333;
     font-family: 'Raleway', sans-serif;
+    display: block;
   }
   
   .footer {
@@ -162,6 +163,9 @@ margin-left: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: larger;
+    font-family: 'Raleway', sans-serif;
+
   }
   
   input[type="submit"]:hover {
@@ -197,10 +201,21 @@ footer div {
     size: larger;
 }
 
+.headerskeleton {
+    color: #000000;
+    text-align: center;
+    background-color: #ffffff;
+    opacity: 85%;
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 1%;
+}
+
 .header {
-    color: #865954;
-    font-size: larger;
-    margin-left: 20px;
+  color:#865954;
+  margin-left: 20px;
 }
 
 p {
@@ -213,22 +228,52 @@ p {
 
 
     @media screen and (max-width: 600px) {
-        .fkd, div a, p, .container1,.container2{
+        .fkd, div a, p, .container1,.container2,.container{
             font-size: smaller;
         }
-        .container1,.container2 {
-          display:block;
-        }
+      }
          
-        
-
-      
-        
-
+      @media screen and (max-width: 600px) {
+        h1,h2{
+          font-size: 20px;
+        }
       }
+
+      @media screen and (max-width: 600px) {
+        .explorebutton,.headerskeleton{
+          font-size: 10px;
+          margin-left: 30%;
+          margin-right: 30%;
+
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .container{
+          display: block;
+        }
+      }
+
+
+
+      @media screen and (max-width: 600px) {
+        .me {
+          margin-top: 20%;
+        }
+          
+        }
+    
+
+
+
+
  @media screen and (min-width: 1200px) {  
-     
-      }
+
+      .blockk {display: block;}
+     }
+
+    
+  
      
       .parent-container {
         display: flex;
@@ -258,72 +303,228 @@ p {
         text-align: left;
       }
       
-  .artwork {
-  width: 600px;
-  }
-
-  .artwork {
-    width: 400px;
-    }
 
 
   .row {
-    display: -ms-flexbox; /* IE 10 */
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     padding: 0 4px;
   }
 
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-
-
-      
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-    background-color: black;
+@media (max-width: 767px) {
+  .columns {
+    display: block;
   }
   
-  .image-grid img {
-    width: 100%; 
-    height: auto; 
-  }
-    
-  .header {
-    position: relative;
-    text-align: center;
-  
-  }
-  
-  .header h1, .header h2, .header form {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .header img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
+  .column {
+    flex: none;
     width: 100%;
-    opacity: 50%;
+  }
+}
 
-    }
+  
 
+.explorebutton {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
+}
     
+.explorebutton input[type=submit] {
+  background-color:#865954;
+  color: #fff;
+  padding: 10px 20px; 
+  border:#4f6b5c; 
+  border-radius: 5px; 
+}
 
-    
-    
 .me {
-  width: 500px
+  width: 20%;
+  height: 50%;
+  margin-top: 38%;
+  margin-left: 10%;
 }
 
 h1, h2 {
   font-family: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 8px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #000000;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 249, 249);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+ margin: 0 auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #bf918c;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #4f6b5c;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: #bf918c;
+  border-radius: 5px;
+  opacity: 70%;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #4f6b5c;
+  padding: 2px 16px;
+  color: #fefefe ;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home {
+  background-image: url("../Projectt/images/TurmadaFernanda-.png");
+  background-size: 100%; 
+  background-repeat: no-repeat;
+}
+
+.me {
+  width: 20%;
+  height: 50%;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  margin-top: 47%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-left: 30px;
+  margin-top: 45%;
+}
+
+h3 {
+  color:#865954;
+}
+
+.contact {
+  text-decoration: underline;
+  color:#4f6b5c
 }

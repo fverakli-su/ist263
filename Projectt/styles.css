@@ -227,19 +227,19 @@ p {
  }
 
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 800px) {
         .fkd, div a, p, .container1,.container2,.container{
             font-size: smaller;
         }
       }
          
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 800px) {
         h1,h2{
           font-size: 20px;
         }
       }
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 800px) {
         .explorebutton,.headerskeleton{
           font-size: 10px;
           margin-left: 30%;
@@ -248,28 +248,21 @@ p {
         }
       }
 
-      @media screen and (max-width: 600px) {
-        .container{
-          display: block;
+      @media screen and (max-width: 800px) {
+        .me{
+        display: none;
         }
       }
 
 
 
-      @media screen and (max-width: 600px) {
-        .me {
-          margin-top: 20%;
-        }
-          
-        }
-    
 
 
-
-
- @media screen and (min-width: 1200px) {  
-
-      .blockk {display: block;}
+ @media screen and (min-width: 799px) {  
+      .me2 {
+        display:contents;
+        justify-content: center;
+      }
      }
 
     
@@ -466,10 +459,6 @@ body {
   background-color: #bf918c;
   border-radius: 5px;
   opacity: 70%;
-}
-
-img {
-  margin-bottom: -4px;
 }
 
 .caption-container {

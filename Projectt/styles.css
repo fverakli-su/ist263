@@ -1,3 +1,8 @@
+
+      .parent-container {
+        display: flex;
+      }
+
 nav{
     box-sizing: border-box;
     margin: 0;
@@ -227,7 +232,7 @@ p {
  }
 
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 799px) {
         .fkd, div a, p, .container1,.container2,.container{
             font-size: smaller;
         }
@@ -244,7 +249,9 @@ p {
           font-size: 10px;
           margin-left: 30%;
           margin-right: 30%;
-
+        }
+        .parent-container {
+          display: block;
         }
       }
 
@@ -259,18 +266,10 @@ p {
       .me2 {
         display:contents;
       }
-      .parent-container {
-        display: block;
-      }
       .container {
         margin-bottom: 40%;
       }
      }
-
-     
-      .parent-container {
-        display: flex;
-      }
       
       .container1 {
         flex-direction: column;

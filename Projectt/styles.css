@@ -255,18 +255,24 @@ p {
       }
 
 
-
-
-
  @media screen and (min-width: 799px) {  
       .me2 {
         display:contents;
-        justify-content: center;
+      }
+     }
+
+     @media screen and (min-width: 799px) {  
+      .container {
+        margin-bottom: 40%;
       }
      }
 
     
-  
+     @media screen and (min-width: 799px) {  
+      .parent-container {
+        display: block;
+      }
+     }
      
       .parent-container {
         display: flex;
@@ -516,4 +522,9 @@ h3 {
 .contact {
   text-decoration: underline;
   color:#4f6b5c
+}
+
+.picture {
+  margin-top: 15%;
+  margin-left: 25%;
 }

@@ -259,20 +259,14 @@ p {
       .me2 {
         display:contents;
       }
-     }
-
-     @media screen and (min-width: 799px) {  
+      .parent-container {
+        display: block;
+      }
       .container {
         margin-bottom: 40%;
       }
      }
 
-    
-     @media screen and (min-width: 799px) {  
-      .parent-container {
-        display: block;
-      }
-     }
      
       .parent-container {
         display: flex;

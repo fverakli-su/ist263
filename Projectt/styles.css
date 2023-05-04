@@ -236,6 +236,7 @@ p {
         .fkd, div a, p, .container1,.container2,.container{
             font-size: smaller;
         }
+
       }
          
       @media screen and (max-width: 800px) {
@@ -244,7 +245,7 @@ p {
         }
       }
 
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 801px) {
         .explorebutton,.headerskeleton{
           font-size: 10px;
           margin-left: 30%;
@@ -253,6 +254,9 @@ p {
         .parent-container {
           display: block;
         }
+        .me{
+          display: none;
+          }
       }
 
       @media screen and (max-width: 800px) {
@@ -265,9 +269,6 @@ p {
  @media screen and (min-width: 799px) {  
       .me2 {
         display:contents;
-      }
-      .container {
-        margin-bottom: 40%;
       }
      }
       
@@ -305,19 +306,7 @@ p {
     padding: 0 4px;
   }
 
-@media (max-width: 767px) {
-  .columns {
-    display: block;
-  }
   
-  .column {
-    flex: none;
-    width: 100%;
-  }
-}
-
-  
-
 .explorebutton {
   text-align: center;
   font-family: 'Raleway', sans-serif;

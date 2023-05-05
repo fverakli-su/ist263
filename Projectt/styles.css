@@ -233,71 +233,22 @@ p {
 
 
     @media screen and (max-width: 799px) {
-        .fkd, div a, p, .container1,.container2,.container{
+        .fkd, div a, p,.text{
             font-size: smaller;
         }
-
-      }
-         
-      @media screen and (max-width: 800px) {
-        h1,h2{
-          font-size: 20px;
-        }
-      }
-
-      @media screen and (max-width: 801px) {
         .explorebutton,.headerskeleton{
           font-size: 10px;
           margin-left: 30%;
           margin-right: 30%;
         }
-        .parent-container {
-          display: block;
+          .fkd, div a, p{
+            font-size: smaller;
         }
-        .me{
-          display: none;
-          }
-      }
-
-      @media screen and (max-width: 800px) {
-        .me{
-        display: none;
+        h1,h2{
+          font-size: 20px;
         }
-      }
-
-
- @media screen and (min-width: 799px) {  
-      .me2 {
-        display:contents;
-      }
-     }
+       }
       
-      .container1 {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: left;
-        width: 50%;
-      }
-      
-      .container2 {
-        flex-direction: column;
-        align-items: left;
-        justify-content: flex-end;
-        width: 50%;
-      }
-      
-      .right {
-        margin: 20px;
-        text-align: left;
-      }
-      
-      .left {
-        margin: 20px;
-        text-align: left;
-      }
-      
-
-
   .row {
     display: -ms-flexbox;
     display: flex;
@@ -489,7 +440,6 @@ img.hover-shadow {
 
 .container {
   display: flex;
-  align-items: center;
 }
 
 .text {
@@ -503,10 +453,29 @@ h3 {
 
 .contact {
   text-decoration: underline;
-  color:#23332a
+  color:#222d27
 }
 
-.picture {
-  margin-top: 15%;
-  margin-left: 25%;
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 0 0 48%;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    display: block;
+  }
+
+  .item {
+    width: 100%;
+  }
 }

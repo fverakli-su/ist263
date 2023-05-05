@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox with Two Columns</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.item {
+			flex: 0 0 48%;
+			margin-bottom: 20px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		@media (max-width: 768px) {
+			.container {
+				display: block;
+			}
+
+			.item {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container2">
+        <div class="item">
+            <strong class="header">Self-Reflection</strong>
+			<p>I've battled with the internal conflict of whether I identify more as an extrovert or an introvert for most of my life. For this piece, I decided to illustrate the way in which these sides play a role in my personality. The composition places an emphasis on my extroverted personality, as revealed through the large self-portrait in the center of the canvas, while my introverted sides are represented on each side of the artwork (with their faces cut in half). The extrovert, exhibited with a confident facial expression, is making direct eye contact with the viewer, giving a sense of personal connection—a similar effect to what people feel when around an extroverted person. Conversely, the introverted faces have their eyes closed, symbolizing the way in which I close myself off from society when my introverted mood kicks in. I produced these faces with dull colors in order to give some insight into the emotions I feel during those times.</p>
+		</div>
+		<div class="item">
+            <strong class="header">Turma da Fernanda (Fernanda's gang)</strong>
+			<p> When approaching this project, I was inspired by surrealist collages and created a collage that would reflect three different aspects of my childhood: my favorite Brazilian comic book (Turma da Mônica), the relationship with my younger sister, and living in Brazil. I utilized pages from the comic book that had a beach theme and integrated images of my sister and I as toddlers into the artwork. Moreover, I implemented the unrealistic scale aspect of surrealist art and played around with the proportions of the Sugar Loaf mountain of Rio de Janeiro, a mountain I grew up visiting—and had my sister and I lay down on it. I also incorporated a large-scale image of myself looking down at the mountain. A-Ha’s music video “Take on me” also inspired me, with its mixture of live-action and pencil-sketch animation sequences.<br> </p>
+		</div>
+	</div>
+</body>
+</html>
